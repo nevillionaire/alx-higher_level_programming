@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def print_reversed_list_integer(my_list=[]):
-    if(my_list is not None):
+    if my_list:
         my_list.reverse()
-        for m in my_list:
-            print(f'{m:d}')
+        for i in range(len(my_list)):
+            print("{:d}".format(my_list[i]))
